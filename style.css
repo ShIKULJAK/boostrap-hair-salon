@@ -1,0 +1,208 @@
+:root {
+    --green: #8bc34a;
+    --transition: .3s ease;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:200,400,700,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+
+/*-------NAV-------*/
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+}
+
+.navbar-brand:hover {
+    color: var(--green) !important;
+    transition: var(--transition);
+}
+
+.nav-item {
+    text-transform: uppercase;
+}
+
+.nav-item a:hover {
+    color: var(--green)!important;
+    transition: var(--transition);
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: var(--green) !important;
+}
+
+
+/*-------SLIDER-------*/
+
+.carousel-caption {
+    bottom: 35%;
+}
+
+.carousel-caption h5 {
+    font-size: 4rem;
+}
+
+.carousel-caption p {
+    background: var(--green);
+    padding: 5px;
+    display: inline-block;
+    font-size: .8rem;
+}
+
+.carousel-caption button {
+    background: #000;
+    border-radius: 0;
+    font-size: .8rem;
+}
+
+.carousel-caption button:hover {
+    background: var(--green);
+    color: #000;
+    border-radius: 0;
+    border: 1px solid #000;
+}
+
+
+/* ---- WELCOME ---- */
+
+.welcome h2 span:first-child {
+    color: var(--green);
+    font-style: italic;
+    font-weight: bold;
+}
+
+.welcome p {
+    font-size: .8rem;
+}
+
+.welcome a {
+    font-size: .8rem;
+    color: #949494;
+}
+
+.welcome h3 {
+    color: var(--green);
+}
+
+.welcome p span {
+    font-weight: bold;
+}
+
+
+/* ---- FEATURED SERVICES ---- */
+
+.featured-services .row:first-child h1:after {
+    display: block;
+    content: "";
+    width: 130px;
+    height: 2px;
+    margin: 20px auto;
+    background: var(--green);
+}
+
+.featured-services .row:last-child p i {
+    font-size: 2rem;
+    color: var(--green);
+}
+
+.featured-services article .col-md-4 {
+    padding: 50px;
+}
+
+
+/* ---- HAIRSTYLE ---- */
+
+.tekst {
+    background-color: #fff;
+    height: 50vh;
+    position: relative;
+    left: -60px;
+}
+
+.tekst h2::after {
+    display: block;
+    content: "";
+    width: 50px;
+    height: 2px;
+    margin: 10px 0;
+    background: var(--green);
+}
+
+
+/* ---- SERVICES ---- */
+
+.services {
+    background-image: radial-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(img/experience.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+}
+
+.services h2 {
+    font-size: 4rem;
+    color: white;
+    font-weight: 200;
+}
+
+.services i {
+    font-size: 4rem;
+    color: white;
+}
+
+
+/* ---- FOOTER ---- */
+
+footer {
+    color: grey;
+}
+
+footer a {
+    font-size: .8rem;
+    color: gray;
+}
+
+footer a:hover {
+    color: var(--green);
+}
+
+footer .col-md-2 .pb {
+    margin-top: 41px;
+}
+
+footer button {
+    position: relative;
+    top: -2px;
+    left: -5px;
+    border-radius: 0 !important;
+    border: none !important;
+}
+
+.ikonice i {
+    font-size: 1.1rem;
+    color: var(--green);
+}
+
+.ikonice p {
+    font-size: .8rem;
+}
